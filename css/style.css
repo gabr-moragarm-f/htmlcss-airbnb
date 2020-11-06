@@ -4,18 +4,22 @@
   padding: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .container{
   width: 100vw;
   background: #fff;
-  padding: 20px;
+  padding: 20px 40px 0;
 }
 
 .city-box{
   width: 100%;
   height: calc(100vh - 40px);
-  background: url(../img/amsterdam.jpeg);
   box-shadow: 4px 4px 8px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .grey-background-filter{
@@ -33,4 +37,19 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: white;
+  text-shadow: 5px 5px 10px #000;
+}
+
+.city-box:first-child{
+  background: url(../img/amsterdam.jpeg);
+}
+
+.city-box:nth-child(2){
+  background: url(../img/nyc.jpg) top;
+  background-size: cover;
+}
+
+.city-box:last-child{
+  background: url(../img/roma.jpg);
+  background-size: cover;
 }
